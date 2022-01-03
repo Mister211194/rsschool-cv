@@ -6,10 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-
+<body class="root">
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="./image/logo-rsschool.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__item_color" href="#about-me">About me</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#card-skills">Skills</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#card-education">Education</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#strengths">Strengths</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#projects">Projects</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#example">Example</a></li>
+                <li class="menu__item"><a class="menu__item_color" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="my-photo">
+            <img class="my-photo__img" src="./image/photo.jpg" alt="EUGENE OSHKIN PHOTO">
+            <h2 class="my-photo__name">EUGENE OSHKIN</h2>
+            <h1 class="my-photo__h1">Front-End Developer</h1>
+        </section>
+        <section class="about-me" id="about-me">
+            <h2 class="about-me__title">About me</h2>
+            <p class="about-me__text">I’m 28 years old. I have a higher education. I am an electronic engineer.</p>
+            <p class="about-me__text">I could not finish the courses on web development …. Procrastination ….</p>
+            <p class="about-me__text">With the rs-school courses I will succeed.</p>
+        </section>
+        <section class="card-conteiner">
+            <div class="card-skills" id="card-skills">
+                <h2 class="card-skills__title">Skills</h2>
+                <ul class="card-skills__ul">
+                    <li class="card-skills__content">HTML</li>
+                    <li class="card-skills__content">CSS/SASS</li>
+                    <li class="card-skills__content">JavaScript (Basic)</li>
+                    <li class="card-skills__content">Git</li>
+                </ul>
+            </div>
+            <div class="card-education" id="card-education">
+                <h2 class="card-education__title">Education</h2>
+                <p class="card-education__content">Polotsk Stage University</p>
+                <p class="card-education__content">Radio engineering faculty</p>
+            </div>
+            <div class="card-strengths" id="strengths">
+                <h2 class="card-strengths__title"> Key strengths</h2>
+                <ul class="card-strengths__ul">
+                    <li class="card-strengths__content">Responsible</li>
+                    <li class="card-strengths__content">Hardworking</li>
+                    <li class="card-strengths__content">Conscientious</li>
+                    <li class="card-strengths__content">Sociable</li>
+                </ul>
+            </div>
+        </section>
+        <section class="my-projects" id="projects">
+            <a href="https://mister211194.github.io/russian-travel/" class="my-projects__link">
+                <h2 class="my-projects__title">My project</h2>
+                <p class="my-projects__subtitle">"Rassian travel"</p>
+            </a>
+        </section>
+        <section class="example" id="example">
+            <h2 class="example__header">CODE EXAMPLE</h2>
+            <pre class="example__pre">
+                <code class="example__code">
+                    function sum(a, b) {
+                        return a + b;
+                      }
+                      
+                      let result = sum(1, 2);
+                      alert( result );
+                </code>
+            </pre>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__social">
+            <li class="footer__social-link"><a class="footer__social-link_color"
+                    href="https://github.com/Mister211194">GitHub</a></li>
+            <li class="footer__social-link"><a class="footer__social-link_color" footer__social-link
+                    href="https://www.facebook.com/profile.php?id=100006832001202">Facebook</a></li>
+        </ul>
+        <ul class="footer__contacts" id="contact">
+            <li class="footer__contact"><span class="footer__contact_bold">Phone:</span> +375(29)212-95-52</li>
+            <li class="footer__contact"><span class="footer__contact_bold">Email:</span> garaz777@gmail.com</li>
+            <li class="footer__contact"><span class="footer__contact_bold">Location:</span> Minsk, Belarus</li>
+        </ul>
+        <div class="footer__logo">
+            <a href="https://rs.school/js/"><img class="footer__logo-image" src="./image/logo-rsschool.png"
+                    alt="rs-school"></a>
+        </div>
+    </footer>
 </body>
+
 
 </html>
